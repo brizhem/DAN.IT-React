@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <script src="https://kit.fontawesome.com/b35c34ce54.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+  <link rel="stylesheet" href="./dist/css/styles.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-logo">
+        <img class="header-logo__img" src="../dist/img/logo.png" alt="#">
+      </div>
+      <nav class="header-menu">
+        <ul class="header-menu__list">
+          <li class="header-menu__list-item">
+            <a class="header-menu__list-link" href="#">+380 (63) 456 78 90</a>
+          </li>
+          <li class="header-menu__list-item">
+            <img src="../dist/img/facebook.png" alt="#">
+          </li>
+          <li class="header-menu__list-item">
+            <img src="../dist/img/instagram.png" alt="#">
+          </li>
+        </ul>
+      </nav>
+      <!-- Button trigger modal login-->
+      <button id="show-modal" class="btn">Вход</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="main-title">Добро пожаловать!<br>Пожалуйста, пройдите авторизацию.</h1>
+
+    <div class="modal-overlay" id="login-modal">
+      <div class="body">
+      <div class="ribbon"></div>
+      <div class="login">
+        <h1 class="login-title">Давайте начнем</h1>
+        <i><p class="login-title">Пожалуйста, заполните форму для входа в личный кабинет</p></i>
+        <form>
+          <div class="modal-window__body">
+            <div class="blockinput">
+              <i class="icon-envelope-alt"></i><input class="login-input" type="mail" placeholder="Email" id="login">
+            </div>
+            <div class="blockinput">
+              <i class="icon-unlock"></i><input class="login-input" type="password" placeholder="Password" id="pass">
+            </div>
+          </div>
+          <div class="btn-wrapper">
+          <button id="login-btn">Войти</button>
+          <button id="close-btn">Закрыть</button>
+        </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  
+
+  <!-- <script src="./dist/js/scripts.min.js"></script> -->
+  <script src="../src/js/modal.js" type="module"></script>
+
+</body>
+
+</html>

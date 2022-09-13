@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Banners</title>
+    <style>
+        .image-to-show {
+            display: none;
+            width: 400px;
+            height: 400px;
+        }
+
+        .images-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .active{
+            display: block;
+        }
+
+        .btn{
+            margin-top: 20px;
+            margin-right: 15px;
+        }
+
+        /* .timer{
+            margin-top: 20px;
+            margin-left: 80px;
+            font-size: 40px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="images-wrapper">
+        <img src="./img/1.jpg" alt="image of game" class="image-to-show" />
+        <img src="./img/2.jpg" alt="image of game" class="image-to-show" />
+        <img src="./img/3.JPG" alt="image of game" class="image-to-show" />
+        <img src="./img/4.png" alt="image of game" class="image-to-show" />
+    </div>
+
+    <!-- <div class="timer">
+        <span id="seconds"></span>:<span id="milliseconds"></span>
+    </div> -->
+
+    <button class="btn" id="btn-stop">Прекратить</button>
+    <button class="btn" id="btn-play">Возобновить показ</button>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

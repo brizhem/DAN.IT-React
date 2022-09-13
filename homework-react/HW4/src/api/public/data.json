@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "air filter",
+        "price": 150,
+        "picture": "https://static.ukrparts.com.ua/media/images/4686/46860048103255.jpg",
+        "articul": 15122104,
+        "color": "white"
+    },
+    {
+        "id": 2,
+        "name": "cabin filter",
+        "price": 178,
+        "picture": "https://static.ukrparts.com.ua/media/images/225/02250532103255.jpg",
+        "articul": 1187,
+        "color": "white"
+    },
+    {
+        "id": 3,
+        "name": "brake pads",
+        "price": 288,
+        "picture": "https://static.ukrparts.com.ua/media/images/4426/44260142403255.jpg",
+        "articul": 5693,
+        "color": "grey"
+    },
+    {
+        "id": 4,
+        "name": "brake disk",
+        "price": 414,
+        "picture": "https://static.ukrparts.com.ua/media/images/4686/46860439303255.jpg",
+        "articul": 50100151,
+        "color": "metal"
+    },
+    {
+        "id": 5,
+        "name": "spark plug",
+        "price": 63,
+        "picture": "https://static.ukrparts.com.ua/media/images/101/01010783903255.jpg",
+        "articul": 13453,
+        "color": "white"
+    },
+    {
+        "id": 6,
+        "name": "Oil filter",
+        "price": 66,
+        "picture": "https://static.ukrparts.com.ua/media/images/462/04620024803255.jpg",
+        "articul": 32,
+        "color": "black"
+    },
+    {
+        "id": 7,
+        "name": "ABS sensor",
+        "price": 347,
+        "picture": "https://static.ukrparts.com.ua/media/images/206/02062042403255.jpg",
+        "articul": 30334,
+        "color": "black"
+    },
+    {
+        "id": 8,
+        "name": "Valve tappet",
+        "price": 217,
+        "picture": "https://static.ukrparts.com.ua/media/images/204/02040006301255.jpg",
+        "articul": 420001410,
+        "color": "metal"
+    },
+    {
+        "id": 9,
+        "name": "Camshaft",
+        "price": 1868,
+        "picture": "https://static.ukrparts.com.ua/media/images/478/04780649703255.jpg",
+        "articul": 9600,
+        "color": "white"
+    },
+    {
+        "id": 10,
+        "name": "Catalyst",
+        "price": 4928,
+        "picture": "https://static.ukrparts.com.ua/media/images/406/04060256503255.jpg",
+        "articul": 9123,
+        "color": "metal"
+    }
+]

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homework-buttons</title>
+    <style>
+        .password-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-wrapper {
+            position: relative;
+            width: 200px;
+
+        }
+
+        .input-wrapper input {
+            min-width: 120px;
+            padding: 10px;
+            margin-bottom: 24px;
+        }
+
+        .input-wrapper i {
+            position: absolute;
+            right: 25px;
+            top: 30px;
+            color: grey;
+        }
+
+        .btn {
+            width: 150px;
+        }
+
+        .hidden{
+            visibility: hidden;
+        }
+
+        .error-text{
+            display: none;
+            color: red;
+        }
+
+        .active{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="password-form" action="#" type="POST">
+        <label class="input-wrapper">
+            Ввести пароль
+            <input type="password" class="input-password"/>
+            <i class="fas fa-eye icon-password icon-input-password" data-toggle="input-password"></i>
+            <i class="fas fa-eye-slash icon-password icon-input-password hidden" data-toggle="input-password"></i>
+        </label>
+        <label class="input-wrapper">
+            Подтвердить пароль
+            <input type="password" class="repeat-password"/>
+            <i class="fas fa-eye icon-password icon-repeat-password" data-toggle="repeat-password"></i>
+            <i class="fas fa-eye-slash icon-password icon-repeat-password hidden" data-toggle="repeat-password"></i>
+        </label>
+        <p class="error-text">Нужно ввести одинаковые значения</p>
+        <button type="submit" class="btn">Подтвердить</button>
+    </form>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

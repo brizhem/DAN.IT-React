@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #313131;
+}
+
+.top-menu-logo {
+  display: flex;
+}
+
+.logo-link {
+  display: inline-block;
+  width: 81px;
+  height: 70px;
+  background-image: url(../img/top_menu_logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.top-menu-text {
+  display: inline-block;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  padding: 22px 0;
+  margin: 0;
+}
+
+.nav-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list-item {
+  display: inline-block;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 25px 35px 25px 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #14b9d5;
+}
+
+.top-menu-loupe {
+  width: 68px;
+  background-image: url(../img/loupe.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.the-latast-news {
+  background-image: url(../img/header-bg.jpg);
+  height: 369px;
+  border-top: 1px solid transparent;
+  background-attachment: fixed;
+}
+
+.bg-image-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 37px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 163px;
+  margin-bottom: 44px;
+}
+
+.the-latest-news-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.the-latest-news-buttons a {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 16px 19px;
+  background-color: #89ca62;
+  border-radius: 5px;
+}
+
+.the-latest-news-buttons .btn-blue {
+  background-color: #14b9d5;
+  margin-left: 20px;
+}
+
+.most-popular-posts {
+  margin-top: 49px;
+  height: 1030px;
+}
+
+.section-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #18b4cf;
+}
+
+.most-popular-posts-images {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 890px;
+  align-items: unset;
+  margin-top: 52px;
+}
+
+.most-popular-posts-img {
+  width: 370px;
+}
+
+.most-popular-posts-img p {
+  width: 370px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #353a3d;
+  padding: 20px 0;
+}
+
+.most-popular-posts-img:nth-child(2n) {
+  margin-top: 30px;
+}
+
+.most-popular-clients {
+  background-image: url(../img/parallax-bg.jpeg);
+  height: 588px;
+  background-size: cover;
+  border-top: 1px solid transparent;
+  margin-bottom: 49px;
+  background-attachment: fixed;
+}
+
+.bg-image-title.popular-clients {
+  margin-top: 106px;
+  margin-bottom: 0;
+}
+
+.bg-image-title.popular-clients::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #18b4cf;
+  margin-top: 87px;
+}
+
+.clients-list {
+  display: grid;
+  grid-template-columns: 207px 135px 232px 141px;
+  justify-content: center;
+  grid-gap: 58px;
+  height: 52px;
+  margin-top: 105px;
+}
+
+.clients-list a {
+  display: inline-block;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+}
+
+.clients-list .NationalPost {
+  background-position: -914px -46px;
+}
+
+.clients-list .Dryme {
+  background-position: -58px -57px;
+}
+
+.clients-list .HouseAndHome {
+  background-position: -309px -58px;
+}
+
+.clients-list .Journy {
+  background-position: -657px -58px;
+}
+
+.top-rated-images {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 52px;
+}
+
+.top-rated {
+  margin-bottom: 48px;
+}
+
+.hot-news-list {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-auto-rows: minmax(210px, auto);
+  margin-top: 7px;
+}
+
+.hot-news-item.left-side {
+  grid-column: 1 / 3;
+}
+
+.hot-news-item.right-side {
+  grid-column: 3 / 5;
+  margin-left: 60px;
+}
+
+.hot-news-item.left-side img,
+.hot-news-item.right-side img {
+  height: 259px;
+}
+
+.hot-news-item.medium-side {
+  display: flex;
+  grid-column: 2 / 5;
+}
+
+.hot-news-item.medium-side img {
+  width: 483px;
+  height: 100%;
+  margin-left: 35px;
+}
+
+.hot-news-item.left-side:first-child {
+  display: flex;
+  grid-column: 1 / 4;
+  margin-right: 35px;
+}
+
+.hot-news-item img {
+  width: 100%;
+}
+
+.hot-news-item {
+  margin-top: 44px;
+}
+
+.post-title {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #353a3d;
+  text-align: right;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.post-news {
+  padding-right: 25px;
+  background-color: #f9f7f7;
+}
+
+.post-news p {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+  color: #5b6469;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px;
+  /* height: 80px; */
+  background-color: #000000;
+  margin-top: 77px;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+  justify-self: right;
+  color: #ffffff;
+}
+
+.footer-logo {
+  display: flex;
+}
+
+.logo-vector {
+  width: 38px;
+  height: 24px;
+  background-image: url(../img/Vector.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 3px;
+}
+
+.logo-liot {
+  width: 64px;
+  height: 16px;
+  background-image: url(../img/Liot.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}

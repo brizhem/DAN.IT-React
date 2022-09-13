@@ -1,0 +1,35 @@
+{
+  "name": "step_project_3",
+  "version": "1.0.0",
+  "description": "adaptive_layout_in_team",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/optimistic376/step_project_3.git"
+  },
+  "keywords": [
+    "step_project3"
+  ],
+  "author": "Yevgeniy Brizhevskiy, Julia Ruzmetova, Alina Baranetska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/optimistic376/step_project2/issues"
+  },
+  "homepage": "https://gitlab.com/optimistic376/step_project2#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.38.1"
+  }
+}

@@ -1,0 +1,14 @@
+@import "_variables.scss";
+
+@mixin filterFont {
+    font-family: $main-font-family;
+    font-style: normal;
+    font-size: 15px;
+}
+
+@mixin nullPosition {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}

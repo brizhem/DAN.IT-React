@@ -1,0 +1,53 @@
+#price-input {
+  /* border-color: black; */
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.red-border {
+  border-color: red;
+  /* outline-color: red; */
+}
+
+.green-border {
+  /* border-color: green; */
+  outline-color: green;
+}
+
+.font-size-colored {
+  color: green;
+}
+
+.error {
+  display: none;
+}
+
+.error-active {
+  display: block;
+}
+
+.label-price {
+  font-size: 18px;
+}
+
+.show-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 265px;
+  height: 30px;
+}
+
+.btn-close {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.text-price {
+  margin-left: 10px;
+}

@@ -1,0 +1,32 @@
+@import "_variables";
+body {
+    background-color: #4fbfa5;
+}
+.main {
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    &-filter {
+        &__list {
+            padding: 10px;
+        }
+    }
+
+    &-title {
+        font-family: $main-font-family;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        margin: 50px auto;
+        font-size: 37px;
+        // line-height: normal;
+        line-height: 1.5em;
+        color: $main-text-color;
+        letter-spacing: 0.05em;
+    }
+}

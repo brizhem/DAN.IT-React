@@ -1,0 +1,54 @@
+.container {
+  margin: 20px auto;
+  height: 60px;
+}
+
+.filters {
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+  box-shadow: 0 0 0 1px #46a294, 0 2px 2px #808389;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.filters-filter {
+  display: inline-block;
+  margin-right: 20px;
+}
+.container {
+  margin: 20px auto;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+
+  &-filter {
+    margin-right: 25px;
+  }
+  &-filter label {
+    font-family: $main-font-family;
+    font-style: normal;
+    font-size: 20px;
+    color: #000;
+  }
+}
+.filter_input {
+  @include filterFont;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.filters-options {
+  @include filterFont;
+}
+.filters-filter__select {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 15px;
+}

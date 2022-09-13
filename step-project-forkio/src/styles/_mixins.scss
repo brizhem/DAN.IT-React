@@ -1,0 +1,35 @@
+@mixin titleFontProperties {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: bold;
+  color: $lightText;
+}
+
+@mixin mainFontProperties {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin fontSizeHeight($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin fontMontBold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+@mixin fontMontNormal {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+@mixin fontLatoBold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+@mixin fontLatoNormal {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}

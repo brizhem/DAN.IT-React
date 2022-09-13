@@ -1,0 +1,40 @@
+.what-you-get {
+  margin-top: 120px;
+  text-align: center;
+
+  .title {
+    @include fontSizeHeight(32px, 38px);
+    color: #8d81ac;
+  }
+
+  &__content {
+    img {
+      margin-top: 38px;
+    }
+  }
+
+  &__content--title {
+    @include titleFontProperties;
+    @include fontSizeHeight(16px, 16px);
+    color: $textColor;
+    margin-top: 23px;
+  }
+
+  &__content--text {
+    @include mainFontProperties;
+    @include fontSizeHeight(14px, 21px);
+    color: #848e97;
+    margin-top: 14px;
+  }
+
+  &__code {
+    display: block;
+    margin-top: 64px;
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}

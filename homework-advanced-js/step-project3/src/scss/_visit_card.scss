@@ -1,0 +1,195 @@
+@import "_variables";
+
+.create_visit__btn {
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.modal_card__title {
+  font-size: 20px;
+  text-align: center;
+  color: #f1f2f4;
+  text-shadow: 0 1px 0 #000;
+  margin-bottom: 10px;
+}
+
+#form_submit {
+  max-width: 60%;
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  max-width: 800px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  text-align: center;
+  border-radius: 3px;
+  transition: 0.3s all;
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal_card {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(72 65 65 / 85%);
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.visit_form {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 5px;
+  width: 85%;
+  font-size: 13px;
+  text-align: start;
+}
+
+.visit_form label {
+  padding: 0 12px;
+}
+
+.block {
+  display: none;
+}
+
+.block.active {
+  display: block;
+}
+
+.close-button {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  font-size: $big-font-size;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+
+  &:hover {
+    background: none;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+.cards-list__card--btn-close {
+  @extend.close-button;
+  right: 5px;
+  top: 10px;
+}
+
+input.patient_info {
+  width: 55%;
+  border: 1px solid rgb(0, 0, 0);
+  line-height: 2em;
+}
+
+button.visit_card__btn {
+  font-size: $small-font-size;
+  margin-top: 15px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 145px;
+}
+
+.edit-btn {
+  @extend .close-button;
+  right: 40px;
+  font-size: $small-font-size;
+  padding-top: 0px;
+}
+
+.visit_card.title {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.visit_card.info {
+  margin: 0 auto;
+  font-size: $big-font-size;
+  font-weight: bold;
+}
+
+.create_visit__btn {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.cards-list {
+  display: flex;
+
+  &__card {
+    max-width: 350px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #46a294, 0 2px 2px #808389;
+    padding: 10px;
+    font-size: $big-font-size;
+    text-align: center;
+    margin: 25px;
+    position: relative;
+    border-radius: 5px;
+
+    & .show_more {
+      font-size: $small-font-size;
+      height: 280px;
+    }
+
+    &--content {
+      display: block;
+      margin-top: 20px;
+
+      & p {
+        margin-bottom: 20px;
+      }
+
+      &.hidden {
+        //visibility: hidden;
+        display: none;
+      }
+    }
+  }
+}

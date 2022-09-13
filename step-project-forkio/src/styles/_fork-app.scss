@@ -1,0 +1,46 @@
+.fork-app {
+  text-align: center;
+  margin: 0 auto;
+  .title {
+    @include fontSizeHeight(82px, 82px);
+    margin-top: 85px;
+  }
+  &__purple-text {
+    @include fontLatoNormal;
+    color: $purple;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  &__description {
+    @include fontMontNormal;
+    color: #848e97;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  &__download-btn {
+    text-decoration: none;
+    border: 2px solid $purple;
+    border-radius: 40px;
+    color: $white;
+    background-color: $purple;
+    cursor: pointer;
+    padding: 23px 60px;
+    font-size: 21px;
+    @include fontMontBold;
+    text-align: center;
+    max-width: 390px;
+    max-height: 62px;
+    margin: 0 auto;
+    margin-top: 495px;
+    &:hover {
+      cursor: pointer;
+      color: $purple;
+      background-color: $white;
+    }
+  }
+}
+
+.title {
+  @include titleFontProperties;
+}

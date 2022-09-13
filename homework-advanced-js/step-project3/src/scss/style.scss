@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url(../fonts/Nekst-Regular.ttf);
+@import "reset.scss";
+@import "_header.scss";
+@import "_mixin.scss";
+@import "_main.scss";
+@import "_modal.scss";
+@import "_filter.scss";
+@import "_visit_card.scss";
+@import "_variables";
+
+html,
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+    min-width: 320px;
+    height: 100%;
+    // height: 100%;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./dist/css/styles.min.css" />
+  <script src="https://kit.fontawesome.com/b35c34ce54.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    
+    .main {
+      background-image: none;
+      height: fit-content;
+    }
+  </style>
+  <header class="header">
+    <div class="container">
+      <div class="header-logo">
+        <img class="header-logo__img" src="../dist/img/logo.png" alt="#">
+      </div>
+      <nav class="header-menu">
+        <ul class="header-menu__list">
+          <li class="header-menu__list-item">
+            <a class="header-menu__list-link" href="#">+380 (63) 456 78 90</a>
+          </li>
+          <li class="header-menu__list-item">
+            <img src="../dist/img/facebook.png" alt="#">
+          </li>
+          <li class="header-menu__list-item">
+            <img src="../dist/img/instagram.png" alt="#">
+          </li>
+        </ul>
+      </nav>
+      <!-- Button trigger modal-->
+      <button id="show-modal" class="btn">Создать визит</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <section class="filters">
+        <div class="filters-filter">
+          <label class="filters-filter__label" for="urgensy">Срочность:</label>
+          <select class="select" name="select_urgensy" id='filter-urgensy'>
+            <option value="" selected>Все</option>
+            <option class="filters-options" value="high">Неотложная</option>
+            <option class="filters-options" value="normal">Приоритетная</option>
+            <option class="filters-options" value="low">Обычная</option>
+          </select>
+        </div>
+
+        <div class="filters-filter">
+          <label class="filters-filter__label" for="status">Статус:</label>
+          <select class="select" name="select_status" id='filter-status'>
+            <!-- <option value="" selected></option> -->
+            <option class="filters-options" value="open">Открыт</option>
+            <option class="filters-options" value="done">Выполнен</option>
+          </select>
+        </div>
+
+        <div class="filters-filter">
+          <label class="filters-filter__label" for="filter_title">Заголовок:</label>
+          <input class="filter_input" type="text" placeholder="Фильтр по заголовку" id="filter-title">
+        </div>
+
+        <div class="filters-filter">
+          <label class="filters-filter__label" for="filter_title">Описание визита:</label>
+          <input class="filter_input" type="text" placeholder="Фильтр по описанию" id="filter-description">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Alina -->
+  <div class="container-modal" id="container-modal">
+    <div class="modal" id="visit_card">
+      <form class="modal_card" id="card_form" method="POST">
+        <h5 class="modal_card__title">Создать визит</h5>
+        <button class="close-button" id="close_visit-btn"><i class="fas fa-times"></i></button>
+        <div class="visit_form">
+          <label for="doctor">Доктор</label>
+          <select class="visit_form select" name="doctor" id='doctor'>
+            <!-- <option value="none" disabled selected>Выберите нужного врача</option> -->
+            <option value="dentist">Дантист</option>
+            <option value="cardiologist">Кардиолог</option>
+            <option value="therapist" selected>Терапевт</option>
+          </select>
+          <div class="general_inf block" id="general">
+            <div class="visit_element">
+              <div class="visit_form content">
+                <label for="patient_info">Цель визита</label>
+                <input class="patient_info" type="text" name="purpose" id="purpose" />
+              </div>
+
+              <div class="visit_form content">
+                <label for="patient_info">Краткое описание визита</label>
+                <input class="patient_info" type="text" name="description" id="description" />
+              </div>
+
+              <div class="visit_form content">
+                <label for="patient_info">Срочность</label>
+                <select class="visit_form select" name="urgensy" id='urgensy'>
+                  <option value="none" disabled selected>Срочность визита</option>
+                  <option value="low">Обычная</option>
+                  <option value="normal">Приоритетная</option>
+                  <option value="high">Неотложная</option>
+                </select>
+              </div>
+
+              <div class="visit_form content">
+                <label for="patient_info">Статус</label>
+                <select class="visit_form select" name="status" id='status'>
+                  <option value="open" selected>Открыт</option>
+                  <option value="done">Выполнен</option>
+                </select>
+              </div>
+
+              <div class="visit_form content">
+                <label for="patient_info">ФИО</label>
+                <input class="patient_info" type="text" name="patient" id="patient" />
+              </div>
+            </div>
+          </div>
+
+          <div class="cardiologist_inf block" id="cardiologist_block">
+            <div class="visit_form content">
+              <label for="patient_info">Обычное давление</label>
+              <input class="patient_info" type="text" name="pressure" id="pressure" />
+            </div>
+
+            <div class="visit_form content">
+              <label for="patient_info">Индекс массы тела</label>
+              <input class="patient_info" type="text" name="bmi" id="bmi" />
+            </div>
+
+            <div class="visit_form content">
+              <label for="patient_info">Перенесенные заболевания сердечно-сосудистой системы</label>
+              <input class="patient_info" type="text" name="heart_diseaes" id="heart_diseaes" />
+            </div>
+
+          </div>
+
+          <div class="dentist_inf block" id="dentist_block">
+            <div class="visit_form content">
+              <label for="patient_info">Дата последнего посещения</label>
+              <input class="patient_info" type="date" name="last_visit" id="last_visit">
+            </div>
+          </div>
+
+          <div class="therapist_inf block" id="age_block">
+            <div class="visit_form content">
+              <label for="patient_info">Возраст</label>
+              <input class="patient_info" type="number" name="age" id="age" />
+            </div>
+          </div>
+
+          <input type="text" id="card-id" style="display: none">
+
+          <button type="submit" class="create_visit__btn" id="submit-card-btn">Submit</button>
+          <button type="submit" class="create_visit__btn" id="edit-card-btn">Edit</button>
+        </div>
+
+    </div>
+    </form>
+  </div>
+
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+  <!-- Alina -->
+
+  <section class="cards-list" id="work_deck">
+
+  </section>
+
+  <script src="./src/js/modal.js"></script>
+  <script src="./src/js/main.js" type="module"></script>
+  <script src="./src/js/card.js" type="module"></script>
+</body>
+
+</html>

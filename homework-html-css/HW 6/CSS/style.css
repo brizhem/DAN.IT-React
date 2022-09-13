@@ -1,0 +1,284 @@
+.main-background {
+  background-image: url(../img/main_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Ubuntu";
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border-bottom: 1px solid transparent;
+}
+
+.top-menu-left {
+  margin-left: 79px;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.top-menu-right {
+  display: flex;
+  align-items: center;
+  margin-right: 79px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.5s, text-decoration 0.5s;
+}
+
+.link:hover {
+  color: #01813f;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+.icon:hover .icon-svg {
+  fill: #01813f;
+}
+
+.top-menu-text {
+  display: inline-block;
+  padding-left: 27px;
+  border-left: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  position: relative;
+  width: 444px;
+  background-color: #fff;
+  border-top: 1px solid transparent;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 324px;
+}
+
+.form-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.form-title .link {
+  display: inline-block;
+  color: #3cb878;
+}
+
+.form-title .link:hover {
+  color: #01813f;
+  text-decoration: underline;
+}
+
+.square {
+  position: absolute;
+  left: 0;
+  top: 29px;
+  width: 18px;
+  height: 18px;
+  background-color: #3cb878;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.btn-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #305db8;
+  border: 0;
+  color: #fff;
+  font-weight: normal;
+  width: 160px;
+  padding: 12px 0;
+  border-radius: 4px;
+  transition: background-color 0.5s;
+}
+
+.btn-login:last-child {
+  background-color: #df4a32;
+}
+
+.btn-login:last-child:hover {
+  background-color: #ab1f09;
+}
+
+.btn-login:hover {
+  background-color: #022263;
+}
+
+.btn-login i {
+  font-size: 24px;
+  padding-right: 18px;
+  border-right: 1px solid rgba(10, 22, 47, 0.1);
+}
+
+.btn-login:last-child i {
+  padding-right: 7px;
+}
+
+.btn-login span {
+  display: inline-block;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 18px;
+}
+
+.lofo-facebook {
+  display: inline-block;
+}
+
+.lofo-facebook i {
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+}
+
+.legend {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  color: #848484;
+  margin-bottom: 11px;
+  border-style: solid none none;
+}
+
+.legend::before {
+  content: "";
+  display: inline-block;
+  width: 152px;
+  height: 1px;
+  background-color: #f2f2f2;
+  margin-bottom: 0.5ex;
+}
+
+.legend::after {
+  content: "";
+  display: inline-block;
+  width: 152px;
+  height: 1px;
+  background-color: #f2f2f2;
+  margin-bottom: 0.5ex;
+}
+
+.input {
+  width: 100%;
+  height: 46px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 15px;
+  font-family: "Ubuntu";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #bebebe;
+  outline: 0;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.21);
+  color: #434343;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+
+.agree-terms {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  color: #434343;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 0 0 0 28px;
+  cursor: pointer;
+}
+
+.checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.0001);
+  border: 1px solid #f2f2f2;
+  transition: 0.2s;
+}
+
+.checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 3px;
+  width: 14px;
+  height: 9px;
+  border-left: 2px solid #3cb878;
+  border-bottom: 2px solid #3cb878;
+  transform: rotate(-55deg);
+}
+
+.checkbox:hover + label::after {
+  border-left: 2px solid #01813f;
+  border-bottom: 2px solid #01813f;
+}
+
+.agree-terms .link {
+  color: #3cb878;
+}
+
+.agree-terms .link:hover {
+  color: #01813f;
+  text-decoration: underline;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 16px 0;
+  background-color: rgba(60, 184, 120, 0.8);
+  border-radius: 4px;
+  border: 0;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-bottom: 38px;
+  transition: background-color 0.5s;
+}
+
+.btn-submit:hover {
+  background-color: #01813f;
+}

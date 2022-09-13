@@ -1,0 +1,105 @@
+.pricing {
+  text-align: center;
+  background-image: url(./img/bg_pricing.png);
+  padding-bottom: 10px;
+
+  .title {
+    @include fontSizeHeight(28px, 42px);
+    margin-bottom: 14px;
+  }
+
+  &__card {
+    width: 257px;
+    height: 457px;
+    margin: 0 auto;
+    background-color: rgba(#fff, 0.11);
+    margin-top: 18px;
+  }
+
+  &__card--title {
+    @include titleFontProperties;
+    @include fontSizeHeight(24px, 24px);
+    text-transform: uppercase;
+    color: $lightText;
+    padding: 36px 0;
+    background-color: rgba(#fff, 0.06);
+  }
+
+  &__card--price {
+    @include titleFontProperties;
+    @include fontSizeHeight(60px, 62px);
+    text-transform: uppercase;
+    color: $lightText;
+    margin-top: 30px;
+  }
+
+  &__card--period {
+    @include titleFontProperties;
+    @include fontSizeHeight(14px, 16px);
+    text-transform: uppercase;
+    color: $lightText;
+    margin-top: 20px;
+  }
+
+  &__card--period::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: #8d81ac;
+    margin: 0 auto;
+    margin-top: 38px;
+  }
+
+  &__card--conditions {
+    @include titleFontProperties;
+    @include fontSizeHeight(16px, 28px);
+    color: $lightText;
+    margin-top: 30px;
+    height: 56px;
+    overflow: hidden;
+  }
+
+  &__card--btn {
+    display: block;
+    width: 163px;
+    margin: 0 auto;
+    margin-top: 36px;
+    @include fontSizeHeight(15px, 15px);
+    text-transform: uppercase;
+    color: $lightText;
+    text-decoration: none;
+    padding: 15px 0;
+    background-color: rgba(#fff, 0.15);
+    border-radius: 30px;
+  }
+
+  &__card.main {
+    width: 299px;
+    height: 560px;
+    background-color: rgba(#463048, 0.84);
+
+    .pricing__card--title {
+      padding: 43px 0;
+      background-color: rgba(#000, 0.11);
+    }
+
+    .pricing__card--price {
+      @include fontSizeHeight(82px, 84px);
+      margin-top: 14px;
+    }
+
+    .pricing__card--period::after {
+      margin-top: 46px;
+    }
+
+    .pricing__card--conditions {
+      margin-top: 40px;
+      line-height: 32px;
+    }
+
+    .pricing__card--btn {
+      margin-top: 83px;
+    }
+  }
+}

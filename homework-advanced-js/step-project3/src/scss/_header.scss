@@ -1,0 +1,64 @@
+@import "_variables";
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background-color: $main-text-color;
+    display: flex;
+    justify-content: center;
+
+    &-logo {
+        display: flex;
+        // border-left: 1px solid #c4c4c4;
+        // border-right: 1px solid #c4c4c4;
+        padding: 18px;
+    }
+
+    &-menu {
+        display: flex;
+        justify-content: center;
+
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.header-menu__list-item {
+    // border-right: 1px solid #c4c4c4;
+    padding: 35px;
+    cursor: pointer;
+
+    & a:hover {
+        color: $main-color;
+    }
+}
+
+.header-menu__list-link {
+    font-family: $main-font-family;
+    font-style: normal;
+    font-size: $big-font-size;
+    color: #000000;
+    letter-spacing: 0.05em;
+}
+
+.btn {
+    margin-top: 0;
+    margin-left: 30px;
+    background: $main-color;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 10px;
+    border-radius: 3px;
+    border: none;
+    font-family: $main-font-family;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: $main-text-color;
+    letter-spacing: 0.05em;
+}

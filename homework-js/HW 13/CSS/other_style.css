@@ -1,0 +1,27 @@
+.form {
+  background-color: #8d96a8;
+}
+
+.btn-login {
+  background-color: #f0ce11;
+}
+
+.btn-login:last-child {
+  background-color: #24a50a;
+}
+
+.btn-login:last-child:hover {
+  background-color: #155c07;
+}
+
+.btn-login:hover {
+  background-color: #85730f;
+}
+
+.btn-submit {
+  background-color: rgba(196, 21, 144, 0.8);
+}
+
+.btn-submit:hover {
+  background-color: #01813f;
+}

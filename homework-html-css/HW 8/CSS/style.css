@@ -1,0 +1,86 @@
+.table {
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+th {
+  border: 1px solid red;
+}
+
+td {
+  border: 1px solid red;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pricing-plan {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.biger-font-size {
+  font-size: 30px;
+}
+
+.line td {
+  min-width: 280px;
+  padding: 22px 0;
+}
+
+.line th {
+  padding-top: 27px;
+  padding-bottom: 18px;
+}
+
+.title-price {
+  font-weight: bold;
+  font-size: 60px;
+  color: #484848;
+}
+
+.price {
+  display: inline-block;
+}
+
+.cent {
+  font-size: 24px;
+}
+
+.title-price__right-side {
+  display: inline-block;
+  text-align: left;
+}
+
+.paying {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.link {
+  display: inline-block;
+  width: 195px;
+  padding: 18px 0;
+  background-color: #484848;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.bgcolor--green {
+  background-color: #89c331;
+}
+
+.bgcolor--red {
+  background-color: #f04a56;
+}
+
+.bgcolor--blue {
+  background-color: #20807c;
+}
